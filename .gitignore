@@ -1,0 +1,9 @@
+.vscode/
+.ipnb_checkpoints/
+zzz_Not needed data/
+.python-version
+*.pyc
+*.csv#
+*.csv
+*.docx#
+.DS_Store
