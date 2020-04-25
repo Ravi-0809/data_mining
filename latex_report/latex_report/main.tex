@@ -1,0 +1,77 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{tabularx, booktabs}
+% \usepackage{float}
+
+\newcolumntype{L}{>{\centering\arraybackslash}m{2cm}}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+% --------- Title ----------- 
+\title{Mining Patterns in Higher Education Enrollment Data}
+
+% --------- Authors section -----------
+\author{\IEEEauthorblockN{Ravi Bharadwaj C}
+\IEEEauthorblockA{\textit{CS-IS department} \\
+\textit{BITS Pilani, Hyderabad campus}\\
+Hyderabad, India \\
+f20160244@hyderabad.bits-pilani.ac.in}
+\and
+\IEEEauthorblockN{Shekhar Somani}
+\IEEEauthorblockA{\textit{CS-IS department} \\
+\textit{BITS Pilani, Hyderabad campus}\\
+Hyderabad, India \\
+f20160347@hyderabad.bits-pilani.ac.in}
+\and
+\IEEEauthorblockN{Maneesh Sistla}
+\IEEEauthorblockA{\textit{CS-IS department} \\
+\textit{BITS Pilani, Hyderabad campus}\\
+Hyderabad, India \\
+f20170238@hyderabad.bits-pilani.ac.in}
+}
+
+\maketitle
+
+% --------- Abstract -----------
+\begin{abstract}
+The aim of this paper is to find patterns, relationships and draw insights from enrollment statistics of higher eduction in India. The data contains census of the population of each college, split by caste, gender and religion, and also contains details about the enrolled courses. This paper details the use of three techniques to identiy patterns in this dataset - Frequent pattern mining using Apriori rule, Clustering using K-means and Classification using logistic regression and a neural network approach. The paper details the complete process followed in completing the data mining tasks by describing the problem, the data selection, pre-processing, visualization, and the mining tasks. The resulting patterns and relationships are presented at the end of the paper comparing the results from each of the three mining techniques while also detailing the advantages and disadvantages of using the three techniques on this dataset which can be generalized to a high dimensional categorical data along with highly sparse ratio data (census).
+\end{abstract}
+
+\begin{IEEEkeywords}
+Data mining, Apriori, K-means, classification, pre-processing
+\end{IEEEkeywords}
+
+% --------- 1. Introduction -----------
+\input{sections/introduction.tex}
+
+% --------- 2. Problem definition -----------
+\input{sections/problem_def.tex}
+
+% --------- 3. Data description -----------
+\input{sections/data_desc.tex}
+
+% --------- 4. Preprocessing -----------
+\input{sections/preproc.tex}
+
+% --------- 5. Data visualization -----------
+\input{sections/visualization.tex}
+
+% --------- 6. Mining tasks -----------
+\input{sections/mining.tex}
+
+% --------- 7. Conclusion -----------
+\input{sections/conclusion.tex}
+
+% --------- References -----------
+\input{sections/references.tex}
+
+\end{document}
